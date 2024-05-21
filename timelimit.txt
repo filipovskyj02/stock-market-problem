@@ -1,0 +1,7 @@
+The time limit is the deciding factor in this problem - the naive solution is super simple and should not be accepted.
+The naive solution takes linear time to answer each query, based on the size of the interval specified in the query.
+The test data were designed around it so there is a huge number of queries with intervals spanning most of the price data points.
+The correct solution uses a sparse table and the fact, that minimum is an overlap friendly function
+to answer min-range queries in constant time.
+Both solutions are included and can be used to determine the time limit.
+For ilustration the sparse table solution takes ~ 3 seconds for AllInOne.txt, whereas the naive one takes around 2 minutes.
